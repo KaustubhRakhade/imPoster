@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Dashboard from './components/Dashboard';
 import SignIn from './components/SignIn';
@@ -26,7 +26,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <>
       <Navbar/>
 
       <div id="pageContent">
@@ -49,7 +49,7 @@ function App() {
         return (<Snackbar popup={p} key={p.time}/>)
       })}
 
-    </Router>
+    </>
 
   );
 }
